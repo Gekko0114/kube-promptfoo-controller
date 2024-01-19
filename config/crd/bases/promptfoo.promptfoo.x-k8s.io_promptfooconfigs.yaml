@@ -35,12 +35,16 @@ spec:
           spec:
             description: PromptFooConfigSpec defines the desired state of PromptFooConfig
             properties:
+              openaiapikey:
+                type: string
               prompt:
-                additionalProperties:
-                  type: string
                 description: Foo is an example field of PromptFooConfig. Edit promptfooconfig_types.go
                   to remove/update
-                type: object
+                type: string
+              schedule:
+                type: string
+            required:
+            - schedule
             type: object
           status:
             description: PromptFooConfigStatus defines the observed state of PromptFooConfig

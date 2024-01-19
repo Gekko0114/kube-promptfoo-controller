@@ -29,7 +29,9 @@ type PromptFooConfigSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of PromptFooConfig. Edit promptfooconfig_types.go to remove/update
-	Prompt map[string]string `json:"prompt,omitempty"`
+	Prompt       string `json:"prompt,omitempty"`
+	Schedule     string `json:"schedule"`
+	OpenAIAPIKey string `json:"openaiapikey,omitempty"`
 }
 
 // PromptFooConfigStatus defines the observed state of PromptFooConfig

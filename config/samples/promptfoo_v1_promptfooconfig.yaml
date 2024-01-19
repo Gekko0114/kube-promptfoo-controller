@@ -1,0 +1,12 @@
+apiVersion: promptfoo.promptfoo.x-k8s.io/v1
+kind: PromptFooConfig
+metadata:
+  labels:
+    app.kubernetes.io/name: promptfooconfig
+    app.kubernetes.io/instance: promptfooconfig-sample
+    app.kubernetes.io/part-of: kube-promptfoo-controller
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kube-promptfoo-controller
+  name: promptfooconfig-sample
+spec:
+  # TODO(user): Add fields here

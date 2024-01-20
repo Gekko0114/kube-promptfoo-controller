@@ -1,8 +1,10 @@
 # kube-promptfoo-controller
-// TODO(user): Add simple overview of use/purpose
+![kube-promptfoo-controller](./icon/kube-promptfoo-controller.svg)
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+[Promptfoo](https://promptfoo.dev/) is a very useful CLI and library for evaluating LLM output quality.  
+When using the openAI API in production, the output may change due to silent updates of openAI API.  
+This repository allows you to run promptfoo as a cronJob. You just need to set up the prompt and schedule on CRD.
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
@@ -12,7 +14,7 @@ You’ll need a Kubernetes cluster to run against. You can use [KIND](https://si
 1. Install Instances of Custom Resources:
 
 ```sh
-kubectl apply -f config/samples/
+make install
 ```
 
 2. Build and push your image to the location specified by `IMG`:
@@ -42,7 +44,7 @@ make undeploy
 ```
 
 ## Contributing
-// TODO(user): Add detailed information on how you would like others to contribute to this project
+Please feel free to contribute to this repository. I would appreciate it.
 
 ### How it works
 This project aims to follow the Kubernetes [Operator pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
